@@ -9,14 +9,15 @@
 	<property name="dist.dir" location="dist" />
 
 	<path id="class.path">
-		<pathelement location="./bin" />
+		<pathelement location="./lib/junit-4.10.jar" />
+		<pathelement location="${build.dir}" />
 	</path>
 
 	<!-- Deletes the existing build, docs and dist directory -->
 	<target name="clean">
 		<delete dir="${build.dir}" />
-		<delete dir="${build.dir}" />
-		<delete dir="${build.dir}" />
+		<delete dir="${docs.dir}" />
+		<delete dir="${dist.dir}" />
 	</target>
 
 	<!-- Creates the build, docs and dist directory -->
