@@ -27,7 +27,7 @@
 		</javac>
 	</target>
 
-	<target name="test" depends="clean, mkdir, compile">
+	<target name="test" depends="clean, makedir, compile">
 		<junit printsummary="yes" fork="true">
 			<classpath refid="class.path" />
 			<test name="Rectangle-Test" todir="${report.dir}" outfile="result">
